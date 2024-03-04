@@ -33,14 +33,14 @@ namespace Dotnet_Training
             //stopwatch.Start();
             stopwatch.Stop();
             var duration = stopwatch.GetElapsedTime();
-            Console.WriteLine($"Elapsed time: {duration}");
+            Console.WriteLine($"Duration : {duration}");
 
             // Start the stopwatch again
             stopwatch.Start();
             stopwatch.Stop();
 
             duration = stopwatch.GetElapsedTime();
-            Console.WriteLine($"Elapsed time: {duration}");
+            Console.WriteLine($"Duration : {duration}");
             */
 
             // Problem 4 -
@@ -57,7 +57,7 @@ namespace Dotnet_Training
             // Problem 5 -
 
             /*
-            IActivity[] fileLogActivity = new IActivity[] {new FileLogActivity("data.txt", "sample file is written") };
+            IActivity[] fileLogActivity = new IActivity[] {new FileLogActivity("sampleFile.txt", "sample file is written") };
             var workflowEngine = new WorkflowEngine();
             workflowEngine.Run(fileLogActivity);
             */

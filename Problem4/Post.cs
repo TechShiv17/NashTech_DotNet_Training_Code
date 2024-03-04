@@ -24,12 +24,11 @@
             get { return creationDate; }
         }
 
-        public int Vote
+        private int Vote
         {
             get { return vote; }
             set
             {
-                // Optional validation logic for vote property
                 if (value < 0)
                 {
                     throw new ArgumentOutOfRangeException("Vote cannot be negative.");
@@ -58,7 +57,7 @@
 
         public int GetVoteCount()
         {
-            return Vote; // Using the property getter here
+            return Vote;
         }
 
         public void Display()
@@ -66,7 +65,7 @@
             Console.WriteLine("Title: {0}", Title);
             Console.WriteLine("Description: {0}", Description);
             Console.WriteLine("Creation Date: {0}", creationDate.ToString());
-            Console.WriteLine("Vote Count: {0}", GetVoteCount()); // Using the method here
+            Console.WriteLine("Vote Count: {0}", GetVoteCount());
         }
     }
 }
